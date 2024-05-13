@@ -1,0 +1,209 @@
+@import url(fonts/font.css);
+
+@import url(../javascript/script.js);
+@media screen and (max-width: 991px ){
+    
+    .Section-for-customers__Navigation-for-content{
+        display: flex;
+        width: 100%;
+        flex-direction: column !important;
+        justify-content: space-between;
+        align-items: center;   
+    }
+    .Section-for-customers__Title{
+        display: flex;
+        justify-content: center;
+        font-size: 32pt !important;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        padding: 0;
+    }
+    .navbar {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+header{
+    position: static !important;
+    background-color: #afafaf !important;
+   
+   
+}
+main{
+    position: static !important;
+    background-color: #ffffff;
+}
+
+.Section-for-customers{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* header */
+.navbar{
+    background-color: transparent;
+    height: auto;
+    margin-left: 10%;
+    margin-right:15%;
+}
+
+.siteLogo{
+    max-height: 80px;
+    width: 100%;
+}
+
+.btn-primary{
+    width: 75px;
+    height: 35px;
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: rgb(23,23,23, 0.3);
+    border-color: rgb(23,23,23, 0.3);
+    box-shadow: 0 0 0 0.25rem rgb(23,23,23, 0.3);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(23,23,23, 0.3);
+    border-color:  rgb(23,23,23, 0.3);
+}
+.offcanvas-body__itemList{
+    list-style-type: none !important;
+    padding: 0;
+    font-size: 20pt;
+}
+.offcanvas-body__itemList  li a{
+    color: #1c1c1c;
+    text-decoration: none !important;
+}
+.offcanvas-body__socials{
+    margin-top: 70vh;
+}
+.btnNavLine{
+    background-color: #ffffff;
+   
+
+    height: 3px;
+    
+}
+.Section-for-customers__Title{
+    font-size: 42pt;
+    margin-bottom: 30px;
+}
+
+.Navigation-for-content__navButton{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000; /* Set bottom border width and color */
+    border-radius: 2px;
+    opacity: 0.5;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20pt;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: ease-in-out;
+}
+.Navigation-for-content__navButton:hover{
+    opacity: 1;
+    border-bottom: 3px bottom;
+}
+
+.content__Main{
+    margin-bottom: 20px;
+}
+.content__Title{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.content__Main ol{
+    padding-left: 44px;
+    margin-bottom: 10px;
+}
+.content__Main ul{
+    padding-left: 22px;
+    margin-bottom: 10px;
+}
+.content__Main a{
+    text-decoration-color: #ff8562;
+}
+.content__Main u{
+    text-decoration: none;
+    color: #ff8562;
+}
+.Section-for-customers__content #contentDelivery{
+   display:block;
+}
+.Section-for-customers__content #contentPayment{
+    display:none;
+}
+.Section-for-customers__content #contentReturn-of-goods{
+    display:none;
+}
+.Section-for-customers__content #contentGuarantee{
+    display:none;
+}
+.footer{
+    position: static !important; 
+    padding-top: 60px;
+    color:#f8f8f8;
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 100%;
+}
+.footer__InfoList{
+   
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.InfoList__wrapper ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.InfoList__Title{
+    
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+.InfoList__Item{
+    font-size: 14pt;
+    margin-bottom: 15px;
+}
+.InfoList__Item a{
+   text-decoration: none;
+   color:#f8f8f8
+}
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+}
+.links__Social{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__breakline{
+    width: 100%;
+    background-color: #f8f8f8;
+    background-position: center center;
+    height: 1px;
+    border-radius: 2px;
+    margin: 20px 0px 20px 0px;
+}
+.footer__privacyText{
+    text-align: right;
+    font-size: 12px;
+}

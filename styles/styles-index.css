@@ -1,0 +1,388 @@
+@import url(fonts/font.css);
+*{
+    font-family: 'FuturaPT';
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+    header{
+        position: static !important;
+        background-color: #afafaf !important;
+       
+       
+    }
+    main{
+        position: static !important;
+    }
+    .section1{
+        background-image: url("https://optim.tildacdn.com/tild3862-6632-4832-b766-373933333937/-/format/webp/Tatika__.jpg") !important;
+        height: 70vh !important;
+    }
+    .btn-Katalog, .btn-Katalog:hover, .btn-check:focus{
+        margin-bottom: 25% !important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+   
+    .section1{
+        height: 50vh !important;
+    }
+    
+    .SectionFormContacts__form{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        margin: 10px 20px 10px 20px !important;
+        max-width: 100% !important;
+        left: 0 !important;
+        top: 0 !important;
+    }
+    .t-checkbox__labeltext{
+        width: 100%;
+        text-align: justify;
+        font-size: 14px !important;
+    }
+    .footer__InfoList{
+        
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Section__form__wrapper{
+        width: 100% !important;
+        height: 100vh !important;
+       
+    }
+}
+header{
+    position: relative;
+    background-color: rgb(23,23,23, 0.3);
+    z-index: 400;
+}
+main{
+    position: relative;
+    top: -100px;
+    z-index: 1;
+    height: 100%;
+}
+body{
+    background-color: #1c1c1c;
+}
+/* header */
+
+.navbar{
+    background-color: transparent;
+    height: auto;
+    margin-left: 10%;
+    margin-right:15%;
+}
+
+.siteLogo{
+    max-height: 80px;
+    width: 100%;
+}
+
+.btn-primary{
+    width: 75px;
+    height: 35px;
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: rgb(23,23,23, 0.3);
+    border-color: rgb(23,23,23, 0.3);
+    box-shadow: 0 0 0 0.25rem rgb(23,23,23, 0.3);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(23,23,23, 0.3);
+    border-color:  rgb(23,23,23, 0.3);
+}
+.offcanvas-body__itemList{
+    list-style-type: none !important;
+    padding: 0;
+    font-size: 20pt;
+}
+.offcanvas-body__itemList  li a{
+    color: #1c1c1c;
+    text-decoration: none !important;
+}
+.offcanvas-body__socials{
+    margin-top: 70vh;
+}
+.btnNavLine{
+    background-color: #ffffff;
+   
+
+    height: 3px;
+    
+}
+
+/* section1 */
+.section1{
+    max-width: 100%;
+    height: 125vh;
+    background-image: url("https://optim.tildacdn.com/tild3766-3437-4334-b265-333566613235/-/format/webp/Tatika_-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+  
+}
+.btn-Katalog{
+
+    color: #1c1c1c;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    padding: 0.5% 10% 0.5% 10%;
+    margin-bottom: 25%;
+    font-size: 32pt;
+    transition: 0.3s ease-in-out;
+}
+.btn-Katalog:hover{
+    transform: scale(1.1) perspective(1px);
+}
+/* title */
+.sectionBestSellers{
+    background-color: #f8f8f8;
+}
+.sectionBestSellers__title{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+/* swiper */
+.sectionBestSellers__swiper{
+    max-width: 1000px;
+    background-color: #f8f8f8;
+    min-height: 480px;
+   
+}
+.swiper-slide{
+    text-align: center;
+}
+.swiper-slide img{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    
+}
+.swiper-button-next{
+    --swiper-theme-color:#1c1c1c;
+    --swiper-navigation-size: 25px;
+}
+.swiper-button-prev{
+    --swiper-theme-color:#1c1c1c;
+    --swiper-navigation-size: 25px;
+
+}
+/* Swiper cuctom-pagination */
+.sectionBestSellers__swiper .swiper-pagination{
+    --swiper-pagination-color: #1c1c1c;
+}
+.sectionBestSellers__swiper .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 35px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 2px));
+    border-radius: var(--swiper-pagination-bullet-border-radius, 0);
+    --swiper-pagination-bullet-width: 6%;
+    margin: var(--swiper-pagination-bullet-horizontal-gap, 0) !important;
+
+}
+.sectionBestSellers__swiper .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 3px));
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+   
+}
+/* btn_showCollection */
+/*sectionBestSellers  */
+.sectionBestSellers{
+    padding-bottom: 80px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    padding: 0;
+}
+.sectionBestSellers__btnShowCollection{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    max-width: 325px;
+    background-color: #0f0f0f;
+    color:#f8f8f8;
+    font-size: 18px;
+    padding: 10px 35px 10px 35px;
+    cursor: pointer;
+}
+.SectionsCategories__TypeOfCategory {
+    filter: brightness(80%);
+
+    position: relative;
+    width: 50%;
+    max-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.SectionsCategories__TypeOfCategory:hover {
+    filter: brightness(100%);
+}
+
+.SectionCategories__btnCategory{
+    position: absolute;
+    opacity: 0.6;
+    padding: 0px 30px 0px 30px;
+    border-radius: 2px;
+    min-width: 150px;
+    height: 45px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+.SectionsCategories__TypeOfCategory img{
+ 
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Section-contacts */
+.SectionFormContacts{
+    background-color: #afafaf;
+}
+.Section__form__wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    
+    position: relative;
+    width: 90%;
+    height: 60vh;
+    background-image: url("https://optim.tildacdn.com/tild6133-3037-4034-b964-643132393362/-/format/webp/2023-04-02_1237_1-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+}
+.SectionFormContacts__form{
+    position:absolute;
+    top: 10%;
+    left: 15%;
+    max-width: 450px;
+    color:#f8f8f8;
+}
+.form__title{
+    text-align: center;
+    font-size: 32px;
+}
+.SectionFormContacts__form .input-text{
+    
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(124, 124, 123);
+    border-radius: 2px;
+    font-size: 18pt;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+    width: 100%;
+    
+
+}
+::-webkit-input-placeholder{
+    padding-left: 5%;
+    color: rgb(255, 255, 255);
+    
+}
+.t-checkbox__labeltext{
+    width: 100%;
+    text-align: justify;
+    font-size: 16px;
+}
+.form__button-submit{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #5b5a5a;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+    cursor: pointer;
+}
+/* footer */
+.footer{
+    position: relative;
+    top: -100px;
+    padding-top: 60px;
+    color:#f8f8f8;
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 100%;
+}
+.footer__InfoList{
+   
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.InfoList__wrapper ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.InfoList__Title{
+    
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+.InfoList__Item{
+    font-size: 14pt;
+    margin-bottom: 15px;
+}
+.InfoList__Item a{
+   text-decoration: none;
+   color:#f8f8f8
+}
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+}
+.links__Social{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__breakline{
+    width: 100%;
+    background-color: #f8f8f8;
+    background-position: center center;
+    height: 1px;
+    border-radius: 2px;
+    margin: 20px 0px 20px 0px;
+}
+.footer__privacyText{
+    text-align: right;
+    font-size: 12px;
+}
