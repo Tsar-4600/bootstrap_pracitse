@@ -17,10 +17,13 @@
     }
     .section1{
         background-image: url("https://optim.tildacdn.com/tild3862-6632-4832-b766-373933333937/-/format/webp/Tatika__.jpg") !important;
-        height: 70vh !important;
+        height: 90vh !important;
     }
     .btn-Katalog, .btn-Katalog:hover, .btn-check:focus{
         margin-bottom: 25% !important;
+    }
+    .Section__form__wrapper{
+        height: 80vh !important;
     }
 }
 
@@ -55,7 +58,7 @@
     }
     .Section__form__wrapper{
         width: 100% !important;
-        height: 100vh !important;
+        height: 95vh !important;
        
     }
 }
