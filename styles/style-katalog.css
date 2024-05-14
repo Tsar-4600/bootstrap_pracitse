@@ -1,6 +1,42 @@
 
+@import url("style-for-customers.css");
+@media screen and (max-width: 991px ){
+    
+  .Section-for-customers__Navigation-for-content{
+      display: flex;
+      width: 100%;
+      flex-direction: column !important;
+      justify-content: space-between;
+      align-items: center;   
+  }
+  .Section-for-customers__Title{
+      display: flex;
+      justify-content: center;
+      font-size: 32pt !important;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+      padding: 0;
+  }
+  .navbar {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+  }
+}
+header{
+  position: static !important;
+  background-color: #afafaf !important;
+ 
+ 
+}
+main{
+  position: static !important;
+  background-color: #ffffff;
+}
 
-
+.Section-for-customers{
+  margin-left: 10%;
+  margin-right: 10%;
+}
 /* price range slider */
 .price-slider {
     width: 300px; /* adjust the width to your liking */

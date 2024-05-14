@@ -47,9 +47,9 @@
                     <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     <div class="offcanvas-body">
                         <ul class = "offcanvas-body__itemList">
-                            <li><a  href="#">Главная</a></li>
-                            <li><a  href="#">Каталог</a></li>
-                            <li><a  href="#">Покупателям</a></li>
+                            <li><a  href="index.html">Главная</a></li>
+                            <li><a  href="html/page-katalog.html">Каталог</a></li>
+                            <li><a  href="html/page-for-customers.html">Покупателям</a></li>
                             <li><a  href="#">Контакты</a></li>
 
                         </ul>
@@ -265,54 +265,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src = "javascript/script.js"></script>
-    <script>
-        const priceSlider = document.querySelector('.price-slider');
-const leftEdge = document.querySelector('.price-slider-edge.left');
-const rightEdge = document.querySelector('.price-slider-edge.right');
-const track = document.querySelector('.price-slider-track');
-const thumb = document.querySelector('.price-slider-thumb');
-
-// Set the initial values for the slider
-let minPrice = 0;
-let maxPrice = 100;
-
-// Set up event listeners for the slider thumb
-thumb.addEventListener('mousedown', (e) => {
-  const startX = e.clientX - track.offsetLeft - thumb.offsetWidth / 2;
-  const startPrice = calculatePriceFromPosition(startX);
-
-  document.addEventListener('mousemove', (e) => {
-    const newX = e.clientX - track.offsetLeft - thumb.offsetWidth / 2;
-    const newPrice = calculatePriceFromPosition(newX);
-
-    // Update the slider thumb position and price
-    thumb.style.left = `${newX}px`;
-    thumb.textContent = `£${newPrice.toFixed(2)}`;
-
-    // Update the left edge text if necessary
-    if (newPrice < minPrice) {
-      minPrice = newPrice;
-      leftEdge.textContent = `£${minPrice.toFixed(2)}`;
-    }
-    // Update the right edge text if necessary
-    if (newPrice > maxPrice) {
-      maxPrice = newPrice;
-      rightEdge.textContent = `£${maxPrice.toFixed(2)}`;
-    }
-  });
-
-  document.addEventListener('mouseup', () => {
-    document.removeEventListener('mousemove', null, false);
-    document.removeEventListener('mouseup', null, false);
-  });
-});
-
-// Helper function to calculate price from position
-function calculatePriceFromPosition(position) {
-  const trackWidth = track.offsetWidth;
-  const percentage = (position / trackWidth) * (maxPrice - minPrice);
-  return minPrice + percentage;
-}   
-    </script>
+    
+   
 </body>
 </html>
