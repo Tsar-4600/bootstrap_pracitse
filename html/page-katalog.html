@@ -120,7 +120,7 @@
             <div class = "InfoList__wrapper">
                 <div class = "InfoList__Title">Информация</div>
                 <ul>
-                    <li class = "InfoList__Item">Договор оферты</li>
+                    <li class = "InfoList__Item"><a href="page-offer.html">Договор оферты</a></li>
                     <li class = "InfoList__Item">Политика конфиденциальности</li>
                 </ul>
             </div>
@@ -189,17 +189,17 @@
 
             // Update the slider thumb position and price
             thumb.style.left = `${newX}px`;
-            thumb.textContent = `£${newPrice.toFixed(2)}`;
+            thumb.textContent = `${newPrice.toFixed(2)}руб.`;
 
             // Update the left edge text if necessary
             if (newPrice < minPrice) {
             minPrice = newPrice;
-            leftEdge.textContent = `£${minPrice.toFixed(2)}`;
+            leftEdge.textContent = `${minPrice.toFixed(2)}руб.`;
             }
             // Update the right edge text if necessary
             if (newPrice > maxPrice) {
             maxPrice = newPrice;
-            rightEdge.textContent = `£${maxPrice.toFixed(2)}`;
+            rightEdge.textContent = `${maxPrice.toFixed(2)}руб.`;
             }
         });
 
