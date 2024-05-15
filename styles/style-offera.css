@@ -19,6 +19,10 @@
 * {
     font-family: 'RoundedElegance';
 }
+.main{
+    margin-left: auto;
+    margin-right: auto;
+}
 .text-container{
     max-width: 1000px;
     font-size: 20px;

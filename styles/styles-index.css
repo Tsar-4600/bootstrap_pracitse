@@ -291,7 +291,7 @@ body{
     font-size: 32px;
 }
 .SectionFormContacts__form .input-text{
-    
+    padding: 5%;
     color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
     background-color: rgb(124, 124, 123);
@@ -306,7 +306,6 @@ body{
 
 }
 ::-webkit-input-placeholder{
-    padding-left: 5%;
     color: rgb(255, 255, 255);
     
 }

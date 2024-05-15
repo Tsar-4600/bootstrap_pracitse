@@ -1,0 +1,87 @@
+@import url(../styles/fonts/font.css);
+*{
+    font-family: "RoundedElegance" ;
+    
+}
+header, footer{
+    font-family: "FuturaPT";
+}
+.main{
+    margin-left: 10%;
+    margin-right: 15%;
+}
+.contacts__Title{
+    font-size:  50px;
+}
+.text-highlited{
+    color: #ff8562;
+    text-decoration: none;
+}
+.SectionFormContacts{
+    background-color: #FFFFFF;
+}
+.text-highlited{
+    color: #ff8562;
+    text-decoration: none;
+}
+.SectionFormContacts{
+    background-color: #FFFFFF;
+}
+.Section__form__wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url("https://optim.tildacdn.com/tild6133-3037-4034-b964-643132393362/-/format/webp/2023-04-02_1237_1-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+.SectionFormContacts__form{
+    max-width: 450px;
+    color:#f8f8f8;
+}
+.form__title{
+    text-align: center;
+    font-size: 32px;
+}
+.SectionFormContacts__form .input-text{
+    padding-left: 5%;
+    color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    font-size: 16pt;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+    width: 100%;
+    
+
+}
+::-webkit-input-placeholder{
+    color: rgb(124, 124, 123);
+    
+}
+.t-checkbox__labeltext{
+    text-align: justify;
+    font-size: 16px;
+    color:#1c1c1c;
+}
+
+.form__button-submit{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #1c1c1c;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+    cursor: pointer;
+}
