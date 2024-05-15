@@ -3,6 +3,7 @@
     font-family: "RoundedElegance" ;
     
 }
+
 header, footer{
     font-family: "FuturaPT";
 }
@@ -12,6 +13,7 @@ header, footer{
 }
 .contacts__Title{
     font-size:  50px;
+    
 }
 .text-highlited{
     color: #ff8562;
