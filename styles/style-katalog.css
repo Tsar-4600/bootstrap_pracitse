@@ -1,10 +1,36 @@
 
 @import url("style-for-customers.css");
-   
-
+.item-list__item {
+  position: relative;
+  max-width: 500px;
+  max-height: 600px;
+}
+.image-layer{
+  max-width: 500px;
+  max-height: 600px;
+}
+.Add-btn{
+  position: absolute;
+  background-color: #FFFFFF;
+}
+main{
+  padding-left: 50px;
+}
+.switch__type-of-clothes{
+  list-style-type: none;
+  padding: 0;
+}
 .filter-menu__wrapper{
-  max-width: 450px;
+  max-width: 200px;
 }
 .filter-menu__price-ranger{
-  max-width: 150px;
+
+  max-width: 200px;
+}
+input{
+
+  max-width: 85px;
+}
+main{
+  width: 100%;
 }

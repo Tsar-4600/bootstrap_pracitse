@@ -26,7 +26,7 @@
             <div class = "menu__wrapper container-fluid">
                 <div class = "container text-center ">
                     <div>
-                        <a href = "#"><img src="images/free-icon-search-241.svg" alt = "Поиск"></a>
+                        <a href = "#"><img src="../images/free-icon-search-241.svg" alt = "Поиск"></a>
                     </div>
                     <div>Поиск</div>
                 </div>
@@ -78,10 +78,10 @@
                     <option value="goldfish">Порядок: сперва старые</option>
                   </select>
             </div>
-            <div class = "filter-menu-and-item-list container-fluid  ">
-                <div class = "filter-menu__wrapper" >
+            <div class = "filter-menu-and-item-list container-fluid  d-flex  ">
+                <div class = "filter-menu__wrapper container d-flex justify-content-start m-0" >
                     <div class = "filter-menu__switch">
-                        <ul >
+                        <ul class = "switch__type-of-clothes">
                             <li class = "switch-menu-item">Все</li>
                             <li class = "switch-menu-item">Костюмы</li>
                             <li class = "switch-menu-item">Платья</li>
@@ -107,20 +107,103 @@
                             Price ranger
                             To See logic ctr+f => Price ranger logic
                         -->
-                        <div class =  "filter-menu__price-ranger container">
+                        <div class =  "filter-menu__price-ranger container-fluid">
                             <div class="container">
                                 <div id="slider-format" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
                                 </div>
-                                <input title="Formatted number" id="input-format-begin">  
-                                <input title="Formatted number" id="input-format-end">     
+                                <div class = "container d-flex">
+                                    <input  title="Formatted number" id="input-format-begin">
+                                    &nbsp;—&nbsp;
+                                    <input title="Formatted number" id="input-format-end">
+                                </div>
+                                  
                             </div>
+                        </div>
+                        <div class = "filter-menu__checkboxForm-sizeFilters">
+                            <form class = "checkboxForm">
+                                <input type="checkbox" id="size1" name="size1" value="36">
+                                <label for="size1">36</label><br>
+                                <input type="checkbox" id="size2" name="size2" value="37">
+                                <label for="size2">37</label><br>
+                                <input type="checkbox" id="size3" name="size3" value="38">
+                                <label for="size3">38</label><br>
+                                <input type="checkbox" id="size4" name="size4" value="39">
+                                <label for="size4">39</label><br>
+                                <input type="checkbox" id="size5" name="size5" value="40">
+                                <label for="size5">40</label><br>
+                                <input type="checkbox" id="size6" name="size6" value="41">
+                                <label for="size6">41</label><br>
+                                <input type="checkbox" id="size7" name="size7" value="M">
+                                <label for="size7">M</label><br>
+                                <input type="checkbox" id="size8" name="size8" value="M-L">
+                                <label for="size8">M-L</label><br>
+                                <input type="checkbox" id="size9" name="size9" value="S">
+                                <label for="size9">S</label><br>
+                                <input type="checkbox" id="size10" name="size10" value="XS">
+                                <label for="size10">XS</label><br>
+                                <input type="checkbox" id="size11" name="size11" value="XS-S">
+                                <label for="size11">XS-S</label><br>
+
+
+                                
+                            </form>
+                              
                         </div>
                     </div>
                 </div>
-            </div>
-       
+                <div class = "item-list container-fluid d-flex gap-1 justify-content-around flex-wrap">
+                    <div class = "item-list__item container-fluid m-0 p-0">
+                        <a>
+                            <img class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
+                            onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
+                            onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg'" alt = "">
+                        </a>
+                        <a class ="btn Add-btn"></a>
+                    </div>
+                    <div class = "item-list__item container-fluid m-0 p-0">
+                        <a>
+                            <img class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
+                            onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
+                            onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg'" alt = "">
+                        </a>
+                        <a class ="btn Add-btn"></a>
+                    </div>
+                    <div class = "item-list__item container-fluid m-0 p-0">
+                        <a>
+                            <img class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
+                            onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
+                            onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg'" alt = "">
+                        </a>
+                        <a class ="btn Add-btn"></a>
+                    </div>
+                    <div class = "item-list__item container-fluid m-0 p-0">
+                        <a>
+                            <img class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
+                            onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
+                            onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg'" alt = "">
+                        </a>
+                        <a class ="btn Add-btn"></a>
+                    </div>
+                    <div class = "item-list__item container-fluid m-0 p-0">
+                            <a>
+                                <img  class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
+                                onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
+                                onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg'" alt = "">
+                            </a>
+                            <a class ="btn Add-btn"></a>
+                    </div>
+                    <div class = "item-list__item d-flex container-fluid m-0 p-0">
+                        <a>
+                            <img  class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
+                            onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
+                            onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg'" alt = "">
+                        </a>
+                        <a class ="btn Add-btn"></a>
+                    </div
 
-           
+                </div>
+    
+            </div>
         </section>
     </main>
     <footer class = "footer">
@@ -181,7 +264,7 @@
     <script> 
         var sliderFormat = document.getElementById('slider-format');
         noUiSlider.create(sliderFormat, {
-            start: [590, 80000],
+            start: [590, 50000],
             step: 1,
             connect: [false, true, false],
             range: {
