@@ -4,13 +4,28 @@
   position: relative;
   max-width: 500px;
   max-height: 600px;
+  padding-bottom: 10px;
+  
+}
+.item__clickableArea{
+  width: 100%;
+  max-height: 600px;
+  
 }
 .image-layer{
-  max-width: 500px;
+  width: 100%;
   max-height: 600px;
+  
+}
+.item__name{
+  display: relative;
+  padding-left: 5px;
+  margin-bottom: 10px;
 }
 .Add-btn{
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: #FFFFFF;
 }
 main{
