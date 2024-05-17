@@ -1,16 +1,33 @@
 
 @import url("style-for-customers.css");
+@media screen and (max-width: 1000px){
+  .item-list__item {
+    flex-basis: 33% !important;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .item-list__item {
+    flex-basis: 100% !important;
+  }
+}
+.Katalog-title{
+  font-size: 52px;
+  font-family: 'Montserrat';
+}
 .item-list__item {
   position: relative;
-  max-width: 500px;
-  max-height: 600px;
+  max-width: 550px;
+  max-height: 700px;
   padding-bottom: 10px;
   margin-bottom: 3%;
-  flex-basis: 33.3%;
+  flex-basis: 25%;
+  flex-grow: 1;
 }
 .item__clickableArea{
   width: 100%;
   max-height: 600px;
+  cursor: pointer;
   
 }
 .image-layer{
@@ -18,10 +35,13 @@
   max-height: 600px;
   
 }
+
 .item__name{
+  font-family: 'FuturaPT';
   padding-left: 5px;
   margin-bottom: 10px;
 }
+.select-menu
 .Add-btn{
   position: absolute;
   top: 0;
@@ -33,9 +53,11 @@ main{
 }
 .switch__type-of-clothes{
   list-style-type: none;
+  
   padding: 0;
 }
 .filter-menu__wrapper{
+  font-family: 'Montserrat';
   max-width: 200px;
 }
 .filter-menu__price-ranger{
@@ -47,5 +69,7 @@ input{
   max-width: 85px;
 }
 main{
+  background-color: #efefef;
   width: 100%;
+  color: #000000;
 }
