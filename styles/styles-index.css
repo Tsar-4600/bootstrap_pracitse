@@ -90,6 +90,33 @@ body{
     width: 100%;
 }
 
+.image-wrapper{
+    position: relative;
+}
+.item-like__counter{
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: #0f0f0f;
+    color: #f8f8f8;
+    border-radius: 50%;
+    font-size: 12px;
+}
+.item-bucket__counter{
+   
+
+    top: 55%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: #0f0f0f;
+    color: #f8f8f8;
+    border-radius: 50%;
+    font-size: 12px;
+}
 .btn-primary{
     width: 75px;
     height: 35px;
@@ -169,7 +196,7 @@ body{
 /* swiper */
 .sectionBestSellers__swiper{
     max-width: 1000px;
-    background-color: #f8f8f8;
+    background-color: #FFFFFF;
     min-height: 480px;
    
 }
@@ -213,6 +240,7 @@ body{
 /*sectionBestSellers  */
 .sectionBestSellers{
     padding-bottom: 80px;
+    background-color: #ffffff;
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
     padding: 0;

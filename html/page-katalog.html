@@ -25,20 +25,22 @@
             </div>
             <div class = "menu__wrapper container-fluid">
                 <div class = "container text-center ">
-                    <div>
+                    <div clss = "image-wrapper">
                         <a href = "#"><img src="../images/free-icon-search-241.svg" alt = "Поиск"></a>
                     </div>
                     <div>Поиск</div>
                 </div>
                 <div class = "container  text-center">
-                    <div>
+                    <div class = "image-wrapper">
                         <a href="#"><img src="https://static.tildacdn.com/tild3435-6332-4063-a631-653165303966/iPhone_14_-_1-2.svg"  alt = "Нравится"></a>
+                        <div class = "item-bucket__counter container p-0 m-0 d-flex justify-content-center align-items-center">0</div>
                     </div>
                     <div>Нравится</div>
                 </div >
                 <div class = "container text-center">
-                    <div>
+                    <div class = "image-wrapper container ">
                         <a href="#"><img src="https://static.tildacdn.com/tild3837-3464-4563-a230-356166353732/free-icon-cart-53353.svg" alt = "Корзина"></a>
+                        <div class = "item-bucket__counter container p-0 m-0 d-flex justify-content-center align-items-center">0</div>
                     </div>
                     <div>Корзина</div>  
                 </div>
@@ -67,48 +69,49 @@
     <main>
         <section class = "Katalog">
             <div class = "Katalog-title">Каталог</div>
-            <div class = "select-menu container d-flex justify-content-end">
+            <div class = "select-menu container-fluid p-3 m-0 mb-2 d-flex justify-content-end">
                 <select name="filter-type" id="filter-type-select">
                     <option value="#">По умолчанию</option>
                     <option value="#">Цена: по возрастанию</option>
                     <option value="#">Цена: по убыванию</option>
                     <option value="#">Название: А&#8209;Я</option>
-                    <option value="parrot">Название: Я&#8209;А</option>
-                    <option value="spider">Порядок: сперва новые</option>
-                    <option value="goldfish">Порядок: сперва старые</option>
+                    <option value="#">Название: Я&#8209;А</option>
+                    <option value="#">Порядок: сперва новые</option>
+                    <option value="#">Порядок: сперва старые</option>
                   </select>
             </div>
             <div class = "filter-menu-and-item-list container-fluid justify-content-center d-flex  p-0 m-0 ">
-                <div class = "filter-menu__wrapper container d-flex justify-content-start m-0 p-0" >
+                <div class = "filter-menu__wrapper container d-flex justify-content-start me-5 p-0" >
                     <div class = "filter-menu__switch">
                         <ul class = "switch__type-of-clothes">
-                            <li class = "switch-menu-item">Все</li>
-                            <li class = "switch-menu-item">Костюмы</li>
-                            <li class = "switch-menu-item">Платья</li>
-                            <li class = "switch-menu-item">Деним</li>
-                            <li class = "switch-menu-item">Обувь</li>
-                            <li class = "switch-menu-item">Рубашки</li>
-                            <li class = "switch-menu-item">Верхняя одежда</li>
-                            <li class = "switch-menu-item">Аксессуары</li>
-                            <li class = "switch-menu-item">Сумки и Рюкзаки</li>
-                            <li class = "switch-menu-item">Лонгсливы и Футболки</li>
-                            <li class = "switch-menu-item">Топы и Боди</li>
-                            <li class = "switch-menu-item">Брюки и Шорты</li>
-                            <li class = "switch-menu-item">Купальники</li>
-                            <li class = "switch-menu-item">Кардиганы и Свитера</li>
-                            <li class = "switch-menu-item">Пиджаки</li>
-                            <li class = "switch-menu-item">Белье</li>
-                            <li class = "switch-menu-item">Леггинсы и Велосипедки</li>
-                            <li class = "switch-menu-item">Комплекты</li>
-                            <li class = "switch-menu-item">Худи и Свитшоты</li>
-                            <li class = "switch-menu-item">Юбки</li>
+                            <li class = "switch-menu-item"><a href = "#">Все</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Костюмы</a></li>
+                            <li class = "switch-menu-item"><a href="#">Платья</a></li>
+                            <li class = "switch-menu-item"><a href="#">Деним</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Обувь</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Рубашки</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Верхняя одежда</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Аксессуары</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Сумки и Рюкзаки</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Лонгсливы и Футболки</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Топы и Боди</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Брюки и Шорты</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Купальники</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Кардиганы и Свитера</a></li>
+                            <li class = "switch-menu-item"><a href ="#">Пиджаки</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Белье</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Леггинсы и Велосипедки</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Комплекты</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Худи и Свитшоты</a></li>
+                            <li class = "switch-menu-item"><a href = "#">Юбки</a></li>
                         </ul>
                         <!-- 
                             Price ranger
                             To See logic ctr+f => Price ranger logic
                         -->
                         <div class =  "filter-menu__price-ranger container-fluid m-0 p-0">
-                            <div class="container m-0 p-0">
+                            <div class="container m-0 mb-2 p-0" >Цена</div>
+                            <div class="container m-0 ps-0 pe-1">
                                 <div id="slider-format" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
                                 </div>
                                 <div class = "container d-flex m-0 p-0">
@@ -120,6 +123,7 @@
                             </div>
                         </div>
                         <div class = "filter-menu__checkboxForm-sizeFilters">
+                            <div class = "container m-0 mt-2 mb-2 p-0">Размер</div>
                             <form class = "checkboxForm">
                                 <input type="checkbox" id="size1" name="size1" value="36">
                                 <label for="size1">36</label><br>
@@ -151,60 +155,70 @@
                         </div>
                     </div>
                 </div>
-                <div class = "item-list container-fluid d-flex justify-content-center flex-wrap p-0 me-auto ms-auto">
-                    <div class = "item-list__item container-fluid ms-1 me-1 mb-0 p-0">
+                <div class = "item-list container-fluid d-flex justify-content-center flex-wrap p-0 gap-2 me-auto ms-auto">
+                    <div class = "item-list__item container-fluid ms-1 me-3 mb-0 p-0">
                         <a class= "item__clickableArea">
                             <img class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
                             onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
                             onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg';" alt = "">
                         </a>
-                        <a class ="btn Add-btn"></a>
-                        <div class = "item__name container p-0">sport bikini set</div>
+                        <a class ="Add-btn">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z" stroke="black" stroke-linejoin="round"></path></svg>
+                        </a>
+                        <div class = "item__name container mb-5 p-0">sport bikini set</div>
                     </div>
-                    <div class = "item-list__item container ms-1 me-1  mb-0 p-0">
+                    <div class = "item-list__item container ms-1 me-3  mb-0 p-0">
                         <a class= "item__clickableArea">
                             <img class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
                             onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
                             onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg';" alt = "">
                         </a>
-                        <a class ="btn Add-btn"></a>
-                        <div class = "item__name container p-0">sport bikini set</div>
+                        <a class ="Add-btn">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z" stroke="black" stroke-linejoin="round"></path></svg>
+                        </a>
+                        <div class = "item__name container  mb-5 p-0">sport bikini set</div>
                     </div>
-                    <div class = "item-list__item container  ms-1 me-1  mb-0 p-0">
+                    <div class = "item-list__item container  ms-1 me-3  mb-0 p-0">
                         <a class= "item__clickableArea">
                             <img class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
                             onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
                             onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg';" alt = "">
                         </a>
-                        <a class ="btn Add-btn"></a>
-                        <div class = "item__name container p-0">sport bikini set</div>
+                        <a class ="Add-btn">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z" stroke="black" stroke-linejoin="round"></path></svg>
+                        </a>
+                        <div class = "item__name container mb-5 p-0">sport bikini set</div>
                     </div>
-                    <div class = "item-list__item container  ms-1 me-1 mb-0 p-0">
+                    <div class = "item-list__item container  ms-1 me-3 mb-0 p-0">
                         <a class= "item__clickableArea">
                             <img class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
                             onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
                             onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg';" alt = "">
                         </a>
-                        <a class ="btn Add-btn"></a>
-                        <div class = "item__name container p-0">sport bikini set</div>
+                        <a class ="Add-btn">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z" stroke="black" stroke-linejoin="round"></path></svg>
+                        </a>
+                        <div class = "item__name container mb-5 p-0">sport bikini set</div>
                     </div>
-                    <div class = "item-list__item container  ms-1 me-1 mb-0 p-0">
+                    <div class = "item-list__item container  ms-1 me-3 mb-0 p-0">
                         <a class= "item__clickableArea">
                             <img class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
                             onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
                             onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg';" alt = "">
                         </a>
-                        <a class ="btn Add-btn"></a>
-                        <div class = "item__name container p-0" >sport bikini set</div>
+                        <a class =" Add-btn"><svg class = "horizontal-align: middle" width="21" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z" stroke="black" stroke-linejoin="round"></path></svg></a>
+                        <div class = "item__name container  mb-5 p-0" >sport bikini set</div>
                     </div>
-                    <div class = "item-list__item container  ms-1 me-1 mb-0 p-0">
+                    <div class = "item-list__item container  ms-1 me-3 mb-0 p-0">
                         <a class= "item__clickableArea">
                             <img class ="image-layer" src="../images/katalog/katalog-image-1-1.jpg"
                             onmouseover="this.src='../images/katalog/katalog-image-1-2.jpg';"
                             onmouseout="this.src='../images/katalog/katalog-image-1-1.jpg';" alt = "">
                         </a>
-                        <a class ="btn Add-btn"></a>
-                        <div class = "item__name container p-0">sport bikini set</div>
+                        <a class ="Add-btn">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z" stroke="black" stroke-linejoin="round"></path></svg>
+                        </a>
+                        <div class = "item__name container  mb-5 p-0">sport bikini set</div>
                     </div>
                    
                 </div>
@@ -278,26 +292,27 @@
                 'min': [590],
                 'max': [17990]
             },
+            handleStyle: {
+               
+            }
         });
        
         var inputFormat_begin = document.getElementById('input-format-begin');
         var inputFormat_end = document.getElementById('input-format-end');
-      
-       
         sliderFormat.noUiSlider.on('update', function (values) {
             inputFormat_begin.value = values[0];
         });
 
         inputFormat_begin.addEventListener('change', function () {
-            sliderFormat.noUiSlider.set(this.value);
+            sliderFormat.noUiSlider.set([this.value, null]);
         });
 
         sliderFormat.noUiSlider.on('update', function (values) {
             inputFormat_end.value = values[1];
         });
 
-        inputFormat_begin.addEventListener('change', function () {
-            sliderFormat.noUiSlider.set(this.value);
+        inputFormat_end.addEventListener('change', function () {
+            sliderFormat.noUiSlider.set([null, this.value]);
         });
     </script>
   

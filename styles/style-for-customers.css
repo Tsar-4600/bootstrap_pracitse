@@ -41,6 +41,7 @@ main{
 }
 /* header */
 .navbar{
+    font-family: 'FuturaPT';
     background-color: transparent;
     height: auto;
     margin-left: 10%;
@@ -51,7 +52,34 @@ main{
     max-height: 80px;
     width: 100%;
 }
+.image-wrapper{
+    position: relative;
+}
+.item-like__counter{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 15px;
 
+    height: 15px;
+    position: absolute;
+    background: #0f0f0f;
+    color: #f8f8f8;
+    border-radius: 50%;
+    font-size: 12px;
+}
+.item-bucket__counter{
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: #0f0f0f;
+    color: #f8f8f8;
+    border-radius: 50%;
+    font-size: 12px;
+}
 .btn-primary{
     width: 75px;
     height: 35px;

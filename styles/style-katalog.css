@@ -1,12 +1,12 @@
 
 @import url("style-for-customers.css");
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1200px){
   .item-list__item {
     flex-basis: 33% !important;
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
   .item-list__item {
     flex-basis: 100% !important;
   }
@@ -17,36 +17,54 @@
 }
 .item-list__item {
   position: relative;
-  max-width: 550px;
+  max-width: 525px;
   max-height: 700px;
   padding-bottom: 10px;
   margin-bottom: 3%;
   flex-basis: 25%;
   flex-grow: 1;
 }
+
 .item__clickableArea{
   width: 100%;
-  max-height: 600px;
+  max-height: 700px;
   cursor: pointer;
   
 }
 .image-layer{
   width: 100%;
-  max-height: 600px;
+  max-height: 700px;
   
 }
 
 .item__name{
   font-family: 'FuturaPT';
-  padding-left: 5px;
-  margin-bottom: 10px;
+
+  padding-bottom: 10px;
+  
 }
-.select-menu
 .Add-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 0;
-  left: 0;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
   background-color: #FFFFFF;
+  border-radius: 60%;
+  cursor: pointer;
+}
+.Add-btn svg:hover{
+  transition: 0.3;
+  scale: 110%;
+}
+.noUi-handle {
+  border: 1px solid #D9D9D9;
+  border-radius: 50%;
+  background: #FFF;
+  cursor: default;
 }
 main{
   padding-left: 50px;
@@ -56,17 +74,21 @@ main{
   
   padding: 0;
 }
+.switch__type-of-clothes a{
+  text-decoration: none;
+  color:#000000;
+}
 .filter-menu__wrapper{
   font-family: 'Montserrat';
   max-width: 200px;
 }
 .filter-menu__price-ranger{
-
-  max-width: 200px;
+  max-width: 95%;
 }
 input{
-
-  max-width: 85px;
+  padding: 5px;
+  max-width: 110px;
+  max-height: 30px;
 }
 main{
   background-color: #efefef;
