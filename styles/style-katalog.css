@@ -5,7 +5,8 @@
   max-width: 500px;
   max-height: 600px;
   padding-bottom: 10px;
-  
+  margin-bottom: 3%;
+  flex-basis: 33.3%;
 }
 .item__clickableArea{
   width: 100%;
@@ -18,7 +19,6 @@
   
 }
 .item__name{
-  display: relative;
   padding-left: 5px;
   margin-bottom: 10px;
 }
