@@ -19,32 +19,33 @@
                     </a>
                 </div>
                 <div class = "container-fluid d-flex col-6 flex-column text-center">
-                    <a href="#"><img class = "siteLogo" src = "https://static.tildacdn.com/tild3339-6334-4133-b736-306531343431/Group_18.svg" alt = "Tetrika"></a>
+                    <a  ><img class = "siteLogo" src = "images/siteLogo.svg" alt = "Tetrika"></a>
                 </div>
                 <div class = "menu__wrapper container-fluid">
                     <div class = "container text-center ">
-                        <div clss = "image-wrapper">
-                            <a href = "#"><img src="images/free-icon-search-241.svg" alt = "Поиск"></a>
+                        <div class = "image-wrapper">
+                            <a  data-bs-toggle="offcanvas" href="#offcanvasTopSearch-input" role="button" aria-controls="offcanvasSearch-inputBar"><img src="images/free-icon-search-241.svg" alt = "Поиск"></a>
                         </div>
                         <div>Поиск</div>
                     </div>
+
                     <div class = "container  text-center">
                         <div class = "image-wrapper">
-                            <a href="#"><img src="https://static.tildacdn.com/tild3435-6332-4063-a631-653165303966/iPhone_14_-_1-2.svg"  alt = "Нравится"></a>
-                            <div class = "item-bucket__counter container p-0 m-0 d-flex justify-content-center align-items-center">0</div>
+                            <a data-bs-toggle = "offcanvas" href="#offCanvas-Liked-Search" role = "button" aria-controls = "offCanvas-Liked-Search"><img src="images/like_photo.svg"  alt = "Нравится"></a>
+                            <div class = "item-like__counter container p-0 m-0 d-flex justify-content-center align-items-center">0</div>
                         </div>
                         <div>Нравится</div>
                     </div >
                     <div class = "container text-center">
                         <div class = "image-wrapper container ">
-                            <a href="#"><img src="https://static.tildacdn.com/tild3837-3464-4563-a230-356166353732/free-icon-cart-53353.svg" alt = "Корзина"></a>
+                            <a href="#"><img src="images/free-icon-cart-53353.svg" alt = "Корзина"></a>
                             <div class = "item-bucket__counter container p-0 m-0 d-flex justify-content-center align-items-center">0</div>
                         </div>
                         <div>Корзина</div>  
                     </div>
                 </div>
-                 
-                <!--   CANVAS -->
+                <!--   OffCANVAS-Nav Left bar -->
+
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav">
                     <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     <div class="offcanvas-body">
@@ -61,7 +62,46 @@
                         </div>
                     </div>
                 </div>
-            <!-- /CANVAS -->
+            <!-- /OffCANVAS-Nav Left bar -->
+            <!-- Search canvas -->
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTopSearch-input">
+                    <div class="offcanvas-body d-flex align-items-center justify-content-center">
+                        <div class = " offcanvas-body__SearchElements-Canvas-Wrapper container d-flex justify-content-center align-items-center m-0">
+                            <div class = "Search-bar-Wrapper container d-flex align-items-center me-0 ps-3 ms-0">
+                                <svg role="presentation" class="t985__search-icon t-search-widget__search-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle r="7.93388" transform="matrix(0.715639 0.698471 -0.715639 0.698471 18.5859 11.7816)" stroke-width="1.0" stroke="#b6b6b6"></circle><line y1="-0.5" x2="9.17531" y2="-0.5" transform="matrix(-0.715635 0.698474 -0.715635 -0.698474 12.75 16.9609)" stroke-width="1.0" stroke="#b6b6b6"></line></svg>
+                                <input class = "offcanvas-body__SearchInput" type = "text">
+                            </div>
+                            <button class="btn-close" type="button"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    </div>
+            </div>
+            <!-- /Search canvas -->
+            <!-- Liked canvas -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvas-Liked-Search">
+                <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas-body ">
+                   <div class = "container offcanvas-end__Title">Избранное</div>
+                   <div class = "likedItems__list">
+                        <div class = "likedItem d-flex justify-content-between align-items-center">
+                            <div class = "image-wrapper container">
+                                <img src ="images/katalog/katalog_image.jpg" alt = "">
+                            </div>
+                            <div class = "likedItem__attributes container-fluid d-flex flex-column align-items-top  ps-3" >
+                                <div class = "likedItem__name">Жилет с болеро</div>
+                                <div class = "likedItem__size">Размер: M</div>
+                                <div class = "likedItem__color">Цвет: Light</div>
+                                <div class = "likedItem__article-number">1089676</div>
+                            </div>
+                            <div class ="likedItem__price  d-flex ">
+                                <div class = "price__number">100000</div>
+                                <div class = "currency">₽</div>
+                            </div>
+                            <a class = "btn remove"><img src = "images/arrows_circle_remove.svg"></a>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <!-- /Liked canvas -->
         </nav>
     </header>
     <main>
