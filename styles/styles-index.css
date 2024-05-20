@@ -1,6 +1,5 @@
 @import url(fonts/font.css);
 *{
-    font-family: 'FuturaPT';
     padding: 0;
     margin: 0;
 }
@@ -11,6 +10,9 @@
         background-color: #afafaf !important;
        
        
+    }
+    header .container-fluid{
+        width: auto !important;
     }
     main{
         position: static !important;
@@ -25,6 +27,13 @@
     .Section__form__wrapper{
         height: 80vh !important;
     }
+    .BtnLiked, .BtnBucket, .BtnSearch{
+        margin-left: 15px;
+    }
+    .navbar>.container-fluid{
+        flex-wrap: nowrap !important;
+    }
+    
 }
 
 @media screen and (max-width: 720px) {
@@ -44,23 +53,36 @@
         left: 0 !important;
         top: 0 !important;
     }
-    .t-checkbox__labeltext{
-        width: 100%;
-        text-align: justify;
-        font-size: 14px !important;
-    }
-    .footer__InfoList{
-        
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .Section__form__wrapper{
         width: 100% !important;
-        height: 95vh !important;
-       
+        background-position-y: 0px !important;
     }
+    .footer__InfoList{
+        justify-content: center !important;
+    }
+    .InfoList__wrapper{
+        width: 100%;
+    }
+    .footer__privacyText{
+        margin-left: auto;
+    }
+    .links__payment{
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 540px)
+{
+    .navbar{
+        margin: auto !important;
+    }
+    .menu__name,  .BtnLogo{
+        display:none !important;
+    }
+    .BtnOpenNav{
+        justify-content: start !important;
+
+    }
+  
 }
 header{
     position: relative;
@@ -223,17 +245,17 @@ body{
     font-family: 'Montserrat';
 }
 
-.offcanvas-end__Title{
+.offcanvas-body .offcanvas-end__Title{
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 20px !important;
     margin-bottom: 20px;
     border-bottom: 1px solid #afafaf;
 }
-.likedItems__list{
+.Items__list{
     padding-top: 10px;
 }
-.likedItem__attributes{
+.Item__attributes{
     font-size: 12px;
 }
 .offcanvas-end .remove img {
@@ -243,17 +265,26 @@ body{
 
 }
 
-.likedItem__name{
+.Item__name{
     font-size: 16px;
     font-weight: bold;
 }
 .offcanvas-end .image-wrapper{
     width: 72px;
 }
-.likedItem img{
+.Item img{
     border-radius: 5px;
     width: 72px;
     height: 72px;
+}
+/* bucket canvas */
+.bucket__ItemCounter{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.btnIncrease__counter img, .btnDecrease__counter img{
+    width: 24px;
+    height: 24px;
 }
 
 /* section1 */

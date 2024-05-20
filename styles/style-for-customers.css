@@ -2,27 +2,83 @@
 @import url(fonts/font.css);
 
 @import url(../javascript/script.js);
-@media screen and (max-width: 991px ){
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 991px) {
+    header{
+        position: static !important;
+        background-color: #afafaf !important;
+       
+       
+    }
+    header .container-fluid{
+        width: auto !important;
+    }
+    main{
+        position: static !important;
+    }
+    .section1{
+        background-image: url("https://optim.tildacdn.com/tild3862-6632-4832-b766-373933333937/-/format/webp/Tatika__.jpg") !important;
+        height: 90vh !important;
+    }
+    .btn-Katalog, .btn-Katalog:hover, .btn-check:focus{
+        margin-bottom: 25% !important;
+    }
+    .Section__form__wrapper{
+        height: 80vh !important;
+    }
+    .BtnLiked, .BtnBucket, .BtnSearch{
+        margin-left: 15px;
+    }
+    .navbar>.container-fluid{
+        flex-wrap: nowrap !important;
+    }
     
-    .Section-for-customers__Navigation-for-content{
-        display: flex;
-        width: 100%;
-        flex-direction: column !important;
-        justify-content: space-between;
-        align-items: center;   
-    }
+}
+
+@media screen and (max-width: 720px) {
+   
     .Section-for-customers__Title{
-        display: flex;
-        justify-content: center;
-        font-size: 32pt !important;
+        font-size: 30pt !important;
+       
     }
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
-        padding: 0;
+    .footer__InfoList{
+        justify-content: center !important;
     }
-    .navbar {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+    .InfoList__wrapper{
+        width: 100%;
     }
+    .footer__privacyText{
+        margin-left: auto;
+    }
+    .links__payment{
+        margin-right: auto;
+    }
+}
+
+    
+@media screen and (max-width: 540px)
+{
+    .navbar{
+        margin: auto !important;
+    }
+    .menu__name,  .BtnLogo{
+        display:none !important;
+    }
+    .BtnOpenNav{
+        justify-content: start !important;
+
+    }
+  
 }
 header{
     position: static !important;
@@ -80,6 +136,7 @@ main{
     border-radius: 50%;
     font-size: 12px;
 }
+/* button customization */
 .btn-primary{
     width: 75px;
     height: 35px;
@@ -96,11 +153,32 @@ main{
     border-color: rgb(23,23,23, 0.3);
     box-shadow: 0 0 0 0.25rem rgb(23,23,23, 0.3);
 }
+.btn-primary:active {
+    color: #fff;
+    background-color: rgb(23,23,23, 0.3);
+    border-color:  rgb(23,23,23, 0.3);
+}
+.btn-primary:active:focus{
+    box-shadow: none;
+}
 .btn-primary:hover {
     color: #fff;
     background-color: rgb(23,23,23, 0.3);
     border-color:  rgb(23,23,23, 0.3);
 }
+
+
+.btn-close:active{
+   border: none;
+}
+.btn-close:active:focus{
+    box-shadow: none;
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+
+/* /button customization */
 .offcanvas-body__itemList{
     list-style-type: none !important;
     padding: 0;
@@ -120,6 +198,93 @@ main{
     height: 3px;
     
 }
+/* top canvas*/
+.offcanvas-top{
+    height: 150px; 
+    
+}
+
+/* search offcanvas */
+
+
+.Search-bar-Wrapper{
+    border: 1px solid #afafaf;
+
+    max-width: 750px;
+}
+.offcanvas-top .btn-close{
+    margin-left: 2%;
+    
+
+}
+
+.offcanvas-top textarea, .offcanvas-top input, .offcanvas-top input[type]{
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    height: 60px;
+    width:100%;
+   
+}
+.offcanvas-top textarea:active, .offcanvas-top input:active, .offcanvas-top input[type]:active{
+    box-shadow: #ffffff;
+}
+.offcanvas-top textarea:focus, .offcanvas-top input:focus, .offcanvas-top input[type]:focus {
+    border: none;
+    outline: 0 none;
+}
+/* offcanvas Liked  */
+.offcanvas-end{
+    width: 560px;
+}
+.offcanvas-end div{
+    font-family: 'Montserrat';
+}
+
+.offcanvas-body .offcanvas-end__Title{
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 20px !important;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #afafaf;
+}
+.Items__list{
+    padding-top: 10px;
+}
+.Item__attributes{
+    font-size: 12px;
+}
+.offcanvas-end .remove img {
+    width: 24px;
+    height: 24px;
+
+
+}
+
+.Item__name{
+    font-size: 16px;
+    font-weight: bold;
+}
+.offcanvas-end .image-wrapper{
+    width: 72px;
+}
+.Item img{
+    border-radius: 5px;
+    width: 72px;
+    height: 72px;
+}
+/* bucket canvas */
+.bucket__ItemCounter{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.btnIncrease__counter img, .btnDecrease__counter img{
+    width: 24px;
+    height: 24px;
+}
+
+
 .Section-for-customers__Title{
     font-size: 42pt;
     margin-bottom: 30px;

@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href = "../styles/style-for-customers.css" rel = "stylesheet">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href = "../styles/style-for-customers.css" rel = "stylesheet">
+    <link href = "../styles/style-catalog-item.css" rel = "stylesheet">
+   
 </head>
 <body>
     <header>
@@ -43,7 +46,7 @@
                     </div>
                 </div>
                 <!--   OffCANVAS-Nav Left bar -->
-
+    
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav">
                     <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     <div class="offcanvas-body">
@@ -52,7 +55,7 @@
                             <li><a  href="page-katalog.html">Каталог</a></li>
                             <li><a  href="page-for-customers.html">Покупателям</a></li>
                             <li><a  href="page-contacts.html">Контакты</a></li>
-
+    
                         </ul>
                         <div class = "offcanvas-body__socials">
                             <a href="https://www.instagram.com/tatika_wear?igsh=MWxndWgybG5wcTB1YQ==" target="_blank" rel="nofollow noopener" aria-label="instagram" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" role="presentation" width="30px" height="30px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM25 39.3918C25 31.4558 31.4566 25 39.3918 25H60.6082C68.5442 25 75 31.4566 75 39.3918V60.8028C75 68.738 68.5442 75.1946 60.6082 75.1946H39.3918C31.4558 75.1946 25 68.738 25 60.8028V39.3918ZM36.9883 50.0054C36.9883 42.8847 42.8438 37.0922 50.0397 37.0922C57.2356 37.0922 63.0911 42.8847 63.0911 50.0054C63.0911 57.1252 57.2356 62.9177 50.0397 62.9177C42.843 62.9177 36.9883 57.1252 36.9883 50.0054ZM41.7422 50.0054C41.7422 54.5033 45.4641 58.1638 50.0397 58.1638C54.6153 58.1638 58.3372 54.5041 58.3372 50.0054C58.3372 45.5066 54.6145 41.8469 50.0397 41.8469C45.4641 41.8469 41.7422 45.5066 41.7422 50.0054ZM63.3248 39.6355C65.0208 39.6355 66.3956 38.2606 66.3956 36.5646C66.3956 34.8687 65.0208 33.4938 63.3248 33.4938C61.6288 33.4938 60.2539 34.8687 60.2539 36.5646C60.2539 38.2606 61.6288 39.6355 63.3248 39.6355Z" fill="#1c1c1c"></path></svg></a>
@@ -139,97 +142,96 @@
         </nav>
     </header>
     <main>
-        <section class = "Section-for-customers">
-            <div class = "container-fluid Section-for-customers__Title">Покупателям</div>
-            <div class = "Section-for-customers__Navigation-for-content">
-                <button type = "button" class = "Navigation-for-content__navButton" onclick = "SwitchSectionContent(0)">Доставка</button>
-                <button type = "button" class = "Navigation-for-content__navButton" onclick = "SwitchSectionContent(1)">Оплата</button>
-                <button type = "button" class = "Navigation-for-content__navButton" onclick = "SwitchSectionContent(2)">Возврат и обмен</button>
-                <button type = "button" class = "Navigation-for-content__navButton" onclick = "SwitchSectionContent(3)">Гарантии</button>
-                
-            </div>
-            <div class = "Section-for-customers__content" id = "contentDelivery">
-                <div class = "content__Main">Стоимость доставки – 500-1500 руб (служба СДЭК).</div>
-                <div class = "content__Main">Срок доставки – от 2 до 30 рабочих дней, не считая дня отправления, выходных и праздничных дней (в зависимости от региона доставки). Срок формирования заказа – от 3 до 4 рабочих дней.</div>
-            </div>
-            <div class = "Section-for-customers__content" id = "contentPayment">
-                <div class = "content__Title"><strong>Оплата на сайте осуществляется с помощью:</strong></div>
-                <div class = "content__Title"><strong>Политика проведения платежей. Оплата банковской картой онлайн</strong></div>
-                <div class = "content__Main">
-                    Наш сайт подключен к интернет-эквайрингу, и Вы можете оплатить заказ банковской картой Visa или Mastercard прямо на сайте. После подтверждения выбранного заказа откроется защищенное окно с платежной страницей платёжного сервиса <a href = "https://robokassa.kz"><u>Robokassa</u></a>, где Вам необходимо ввести данные Вашей банковской карты и адрес электронной почты для квитанции или фискального чека. Мы используем протокол 3D Secure для подтверждения оплаты. Если Ваш Банк поддерживает данный протокол, Вы будете перенаправлены на сервер банка для дополнительной идентификации c помощью SMS кода. <strong>Информацию о правилах и методах дополнительной идентификации уточняйте в Банке, выдавшем Вам банковскую карту.</strong>
-                </div>
-                <div class = "content__Main">
-                    В поля на платежной странице требуется ввести номер карты, адрес электронной почты, срок действия карты, трёхзначный код безопасности (CVV2 для VISA или CVC2 для MasterCard). Все необходимые данные отображены на поверхности банковской карты.
-                    CVV2/ CVC2 — это трёхзначный код безопасности, находящийся на оборотной стороне карты.
-                    Далее в том же окне откроется страница Вашего банка-эмитента для ввода 3-D Secure кода. В случае, если у вас не настроен статичный 3-D Secure, он будет отправлен на ваш номер телефона посредством SMS. Если 3-D Secure код к Вам не пришел, то следует обратится в ваш банк-эмитент.
-                    3-D Secure — это самая современная технология обеспечения безопасности платежей по картам в сети интернет. Позволяет однозначно идентифицировать подлинность держателя карты, осуществляющего операцию, и максимально снизить риск мошеннических операций по карте.
-                </div>
-                <div class = "content__Title"><strong>Случаи отказа в совершении платежа:</strong></div>
-                <div class = "content__Main">
-                    <br>В случае, если ваш платёж не прошёл или операция была отменена, проверьте:
-                    <br>—правильно ли были введены реквизиты? Обратите внимание на срок действия вашей карты и номер;
-                    <br>—достаточно ли средств на вашей карте? Подробнее о наличии средств на платежной карте Вы можете узнать, обратившись в банк, выпустивший банковскую карту;
-                    <br>—открыта ли возможность проведения оплат в интернете? Подробнее о возможностях вашей карты карты Вы можете узнать, обратившись в банк-эмитент;
-                    <br>—хватает ли вам ежедневного лимита на платежи в интернете?<br>Подробнее о лимитах вашей карты карты Вы можете узнать, обратившись в банк-эмитент.
+        <div class = "container mt-5 d-flex flex-column" >
+            <div class = "Item__photos-and-Item__attributes d-flex ms-0">
+                <div class = "Item__photos d-flex flex-column">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <img src="../images/katalog/katalog-image-1-1.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-zoom-container">
+                                    <img src="../images/katalog/katalog-image-1-2.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class = "swiper-zoom-container">
+                                    <img src="../images/katalog/katalog-image-1-3.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div  class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../images/katalog/katalog-image-1-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/katalog/katalog-image-1-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/katalog/katalog-image-1-3.jpg" />
+                            </div>
                     
-                    По вопросам непрошедшей оплаты, пожалуйста обратитесь в службу поддержки банка-эмитента, выпустившего вашу банковскую карту, или в службу поддержки сайта, на котором была произведена оплата.
-                    
+                        </div>
+                    </div>
                 </div>
-                <div class = "content__Title"><strong>Гарантии безопасности</strong></div>
-                <div class = "content__Main">Платёжный сервис <a href = "https://robokassa.kz"><u>Robokassa</u></a> защищает и обрабатывает данные Вашей банковской карты по стандарту безопасности PCI DSS. Передача информации в платежный шлюз происходит с применением технологии шифрования SSL. Дальнейшая передача информации происходит по закрытым банковским сетям, имеющим наивысший уровень надежности. <a href = "https://robokassa.kz"><u>Robokassa</u></a> не передает данные Вашей карты интернет магазину или третьим лицам. Для дополнительной аутентификации держателя карты используется протокол 3D Secure.
-                    В случае, если у Вас есть вопросы по совершенному платежу, Вы можете обратиться в службу поддержки клиентов по электронной почте <a href= "mailto:support@robokassa.kz"><u>support@robokassa.kz</u></a>
-                </div>
-                <div class = "content__Title"><strong>Безопасность онлайн платежей</strong></div>
-                <div class = "content__Main">Предоставляемая Вами персональная информация (e-mail, номер банковской карты) является конфиденциальной и не подлежит разглашению. Данные Вашей банковской карты передаются только в зашифрованном виде и не сохраняются на нашем сервере.
-                    Безопасность обработки Интернет-платежей гарантирует платёжный сервис <a href = "https://robokassa.kz"><u>Robokassa</u></a>. Все операции с платежными картами происходят в соответствии с требованиями VISA International, MasterCard Worldwide и других платежных систем. При передаче информации используется специальные технологии безопасности карточных онлайн-платежей, обработка данных ведется на безопасном высокотехнологичном сервере платёжного сервиса.
-                </div>
-                <div class = "content__Title"><strong>Оплата платежными картами безопасна, потому что:</strong></div>
-                <div class = "content__Main">
-                    <ul>
-                        <li>Система авторизации гарантирует покупателю, что платежные реквизиты его платежной карты (номер, срок действия, CVV2/CVC2) не попадут в руки мошенников, так как эти данные не хранятся на сервере в зашифрованном виде и не могут быть похищены.</li>
-                        <li>Покупатель вводит свои платежные данные непосредственно в системе авторизации <a href="https://robokassa.kz"><u>Robokassa</u></a>, а не на сайте интернет-магазина, следовательно, платежные реквизиты карточки покупателя не будут доступны третьим лицам.</li>
-                    </ul>
-                </div>
-            </div>
-             
+                <div class = "container Item__attributes ps-3 d-flex flex-column ">
+                    <div class = "container item__Name">Sport bikini set</div>
+                    <div class = "container item__article-number">Артикул: 129890</div>
+                    <div class = "container item__price d-flex m-0 justify-content-start ">
+                        <div class = "container price__sale">3990 ₽ <s>4890 ₽</s></div>
+                    </div>
+                    <div class = "cloth-size">Размер</div>
+                    <select class = "size__selector" name="cloath-sizes" id="size-choose">
+                        <option value="xs">XS</option>
+                    </select>
 
-            <div class = "Section-for-customers__content" id = "contentReturn-of-goods">
-                
-                <div class = "content__Title"><strong>Возврат товара</strong></div>
-                <div class = "content__Main">
-                    Потребитель вправе отказаться от товара в любое время до его передачи, а после передачи товара - в течение семи дней;
-                    Если вещь не подошла вам по размеру, цвету, фасону или форме, вы так же можете вернуть ее в течение 14 дней с момента покупки в нашем пункте самовывоза.
-                    В случае возврата товара надлежащего качества, Покупатель осуществляет возврат самостоятельно и за свой счет на склад продавца по адресу г. Москва, ул. Малая Семеновская 9 стр.9
-                    Возврат изделия надлежащего качества проводится, если вещь не была в употреблении, сохранены ее товарный вид, потребительские свойства, фабричные ярлыки, а также имеется товарный чек или кассовый чек.
-                    Важно! Обмену и возврату не подлежат: нижнее белье, чулки, носки, купальники, боди, леггинсы, гамаши и иные швейные и трикотажные бельевые и чулочно-носочные изделия.
-                    Интернет-магазин имеет право отказать в возврате в случаях обнаружения нарушений условий сохранения товарного вида, в таком случае все затраты на доставку возврата возлагаются на потребителя
-                    На всю продукцию, приобретаемую вами в интернет-магазине www.tatikawear.ru, распространяется гарантия производителя.
-                </div>
-                <div class = "content__Title"><strong>Возврат денежных средств</strong></div>
-                <div class = "content__Main">
-                    Для возврата денежных средств на банковскую карту необходимо заполнить «Заявление о возврате денежных средств», которое высылается на электронный адрес и оправить его вместе с приложением копии паспорта по адресу info@tatikawear.ru
-                    Возврат денежных средств будет осуществлен на банковскую карту с которой происходила оплата в течение 10-30 календарных дней (зависит от банка) со дня получения «Заявление о возврате денежных средств» Компанией.
-                </div>
-            </div>
-           
-            <div class = "Section-for-customers__content" id = "contentGuarantee">
-                
-                <div class ="content__Title"><strong>Гарантии</strong></div>
-                <div class = "content__Main">Гарантийный срок на всю продукцию TATIKA составляет 30 дней с даты продажи.
-                    Важно! Срок устранения недостатков по гарантийным обязательствам не может превышать 30 рабочих дней.
-                    Рекомендуем ознакомиться с инструкцией по уходу, размещенной на ярлыке изделия. При нарушении условий использования и ухода за изделием продавец не несет гарантийных обязательств перед Покупателем.
-                    Гарантия не распространяется на следующие случаи:
-                    <ol>
-                        <li>Износ во время эксплуатации;</li>
-                        <li>Разрывы, порезы и потертости, прожигание ткани;</li>
-                        <li>Ткань выгорела или выцвела, загрязнилась;</li>
-                        <li>Образование катышек;</li>
-                        <li>Иные дефекты, связанные с нарушением правил использования, ухода, хранения или транспортировки изделия, действий третьих лиц или непреодолимой силы.</li>
-                    </ol> 
+                    <div class = "cloth-color">Цвет</div>
+                    <select class = "size__selector" name="cloath-sizes" id="color-choose">
+                        <option value="xs">white</option>
+                    </select>
+                    <div class = "container d-flex align-items-center">
+                        <button class = "btn btn-secondary">В корзину</button>
+                        <a class ="Add-btn">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z" stroke="black" stroke-linejoin="round"></path></svg>
+                        </a>
+                    </div>
+                    <div class = "cloth__description">
+                        Sport bikini set — твой must-have этого лета для классного загара и пляжных активностей. Купальник с лифом-топом и трусиками-бразильяно, высоту посадки которых ты можешь регулировать по своему вкусу. Купальник изготовлен из легкого и приятного к телу бифлекса, быстро сохнет, не линяет и не выгорает со временем. Комфортная посадка обеспечивается благодаря эластичным резинкам с лого бренда, которые выполняют роль бретелей, а также располагаются под грудью лифа и на поясе трусиков и играют не только функциональную, но и декоративную роль. У топа имеются съемные чашки, лямки также регулируются. Лиф идеально подходит как для небольшой груди, так и для пышных форм. Модель представлена в двух классических цветах Black и White.
+                    </div>
+                    <div class = "cloth__material container mt-5">Состав: 100% полиэстер</div>
                     
-                    Важно! Гарантийный срок на фурнитуру соответствует гарантийному сроку на изделие в целом.</div>
                 </div>
-            </section>
+            
+            </div>
+            <div class = "switch-info">
+                <button type = "button" class = "switch_menuBtn" onclick = "SwitchSectionContent(0)">Уход за изделием</button>
+                <button type = "button" class = "switch_menuBtn" onclick = "SwitchSectionContent(1)">Размеры</button>
+                <button type = "button" class = "switch_menuBtn" onclick = "SwitchSectionContent(2)">Рамзеры изделия</button>
+           
+                
+            </div>
+            <div class="content care__aboutItem">
+                Машинная стирка при температуре воды до 30°C<br>
+                Ручная стирка запрещена<br>
+                Гладить запрещено<br>
+                Не отбеливать<br>
+                Сухая чистка запрещена<br>
+                Барабанная сушка запрещена<br>
+            </div>
+            <div class="content sizes">
+                <a><img src = "../images/katalog/sizes.jpg" alt = ""></a>
+            </div>
+            <div class = "content item__sizes">
+                <a><img src="../images/katalog/clothes-sizes.jpg" alt = ""></a>
+            </div>
+        </div>
     </main>
     <footer class = "footer">
         <div class = "footer__InfoList"> 
@@ -267,7 +269,7 @@
                     <a href="mailto:info@tatikawear.ru"><img src ="https://static.tildacdn.com/tild3964-6366-4634-a330-626362393563/4105936-email-envelo.svg" alt = ""></a>
                     <a href = "https://www.instagram.com/tatika_wear?igsh=MWxndWgybG5wcTB1YQ=="><img src ="https://static.tildacdn.com/tild3939-3232-4536-a235-323236303736/instagram_icon_12524.svg" alt = ""></a>
                     <a href = "https://wa.me/79260205046?text="><img src ="https://static.tildacdn.com/tild6230-3739-4430-b261-326134333934/1497555629-social45_.svg" alt = ""></a>
-
+    
                 </div>
             </div>
             <div class ="footer__breakline"></div>
@@ -275,13 +277,66 @@
                 <img src ="https://static.tildacdn.com/tild6638-6662-4834-b665-303735386131/Group_25.svg" alt = "">
                 <img src ="https://static.tildacdn.com/tild3163-6632-4631-a231-306366663032/Group_26.svg" alt = "">
                 <img src ="https://static.tildacdn.com/tild3939-6666-4532-a337-633663643039/Group_27.svg" alt = "">
-
+    
             </div>
             <div class =  "footer__privacyText">Все права защищены © tatikawear<br>2023</div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src = "../javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            swipe: false,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // zoom duration in milliseconds
+                maxRatio: 3, // maximum zoom ratio
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+      
+        });
+        function SwitchSectionContent(index)
+        {   
+            const array_of_sectionContent = [];
+
+            const elements = document.getElementsByClassName('content');
+            for (let i = 0; i < elements.length; i++) {
+            array_of_sectionContent.push(elements[i]);
+            }
+            switch(index)
+            {
+                case 0:
+                array_of_sectionContent[0].style.display = "block";
+                array_of_sectionContent[1].style.display = "none";
+                array_of_sectionContent[2].style.display = "none";
+                break;
+                case 1:
+                array_of_sectionContent[0].style.display = "none";
+                array_of_sectionContent[1].style.display = "block";
+                array_of_sectionContent[2].style.display = "none";
+        
+                break;
+                case 2: 
+                array_of_sectionContent[0].style.display = "none";
+                array_of_sectionContent[1].style.display = "none";
+                array_of_sectionContent[2].style.display = "block";
+                break;
+            }
+        }
+    </script>
 </body>
 </html>

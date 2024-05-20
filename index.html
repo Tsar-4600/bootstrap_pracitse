@@ -11,37 +11,36 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-black ">
-                <div class = "button-wrapper container-fluid d-flex justify-content-center">
+                <div class = "BtnOpenNav button-wrapper container-fluid d-flex justify-content-center">
                     <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasNav" role="button" aria-controls="offcanvasNav">
                         <div class = "btnNavLine"></div>
                         <div class = "btnNavLine"></div>
                         <div class = "btnNavLine"></div>
                     </a>
                 </div>
-                <div class = "container-fluid d-flex col-6 flex-column text-center">
-                    <a  ><img class = "siteLogo" src = "images/siteLogo.svg" alt = "Tetrika"></a>
+                <div class = "BtnLogo container-fluid d-flex col-6 flex-column  text-center">
+                    <a href="../index.html" ><img class = "siteLogo" src = "images/siteLogo.svg" alt = "Tetrika"></a>
                 </div>
                 <div class = "menu__wrapper container-fluid">
-                    <div class = "container text-center ">
+                    <div class = "BtnSearch container text-center ">
                         <div class = "image-wrapper">
                             <a  data-bs-toggle="offcanvas" href="#offcanvasTopSearch-input" role="button" aria-controls="offcanvasSearch-inputBar"><img src="images/free-icon-search-241.svg" alt = "Поиск"></a>
                         </div>
-                        <div>Поиск</div>
+                        <div class = "menu__name">Поиск</div>
                     </div>
-
-                    <div class = "container  text-center">
+                    <div class = "BtnLiked container  text-center">
                         <div class = "image-wrapper">
                             <a data-bs-toggle = "offcanvas" href="#offCanvas-Liked-Search" role = "button" aria-controls = "offCanvas-Liked-Search"><img src="images/like_photo.svg"  alt = "Нравится"></a>
                             <div class = "item-like__counter container p-0 m-0 d-flex justify-content-center align-items-center">0</div>
                         </div>
-                        <div>Нравится</div>
+                        <div class = "menu__name" >Нравится</div>
                     </div >
-                    <div class = "container text-center">
+                    <div class = "BtnBucket container text-center">
                         <div class = "image-wrapper container ">
-                            <a href="#"><img src="images/free-icon-cart-53353.svg" alt = "Корзина"></a>
+                            <a data-bs-toggle = "offcanvas" role = "button" aria-controls = "offCanvas-Bucket" href="#offCanvas-Bucket" ><img src="images/free-icon-cart-53353.svg" alt = "Корзина"></a>
                             <div class = "item-bucket__counter container p-0 m-0 d-flex justify-content-center align-items-center">0</div>
                         </div>
-                        <div>Корзина</div>  
+                        <div class = "menu__name">Корзина</div>  
                     </div>
                 </div>
                 <!--   OffCANVAS-Nav Left bar -->
@@ -50,7 +49,7 @@
                     <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     <div class="offcanvas-body">
                         <ul class = "offcanvas-body__itemList">
-                            <li><a  href="index.html">Главная</a></li>
+                            <li><a  href="../index.html">Главная</a></li>
                             <li><a  href="html/page-katalog.html">Каталог</a></li>
                             <li><a  href="html/page-for-customers.html">Покупателям</a></li>
                             <li><a  href="html/page-contacts.html">Контакты</a></li>
@@ -64,7 +63,7 @@
                 </div>
             <!-- /OffCANVAS-Nav Left bar -->
             <!-- Search canvas -->
-            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTopSearch-input">
+            <div class="offcanvas offcanvas-top" data-bs-scroll = "true" data-bs-backdrop="false" tabindex="-1" id="offcanvasTopSearch-input">
                     <div class="offcanvas-body d-flex align-items-center justify-content-center">
                         <div class = " offcanvas-body__SearchElements-Canvas-Wrapper container d-flex justify-content-center align-items-center m-0">
                             <div class = "Search-bar-Wrapper container d-flex align-items-center me-0 ps-3 ms-0">
@@ -81,18 +80,18 @@
                 <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 <div class="offcanvas-body ">
                    <div class = "container offcanvas-end__Title">Избранное</div>
-                   <div class = "likedItems__list">
-                        <div class = "likedItem d-flex justify-content-between align-items-center">
+                   <div class = "Items__list">
+                        <div class = "Item d-flex justify-content-between align-items-center">
                             <div class = "image-wrapper container">
-                                <img src ="images/katalog/katalog_image.jpg" alt = "">
+                                <a href = "#"><img src ="images/katalog/katalog_image.jpg" alt = ""></a>
                             </div>
-                            <div class = "likedItem__attributes container-fluid d-flex flex-column align-items-top  ps-3" >
-                                <div class = "likedItem__name">Жилет с болеро</div>
-                                <div class = "likedItem__size">Размер: M</div>
-                                <div class = "likedItem__color">Цвет: Light</div>
-                                <div class = "likedItem__article-number">1089676</div>
+                            <div class = "Item__attributes container d-flex flex-column align-items-top  ps-3" >
+                                <div class = "Item__name">Жилет с болеро</div>
+                                <div class = "Item__size">Размер: M</div>
+                                <div class = "Item__color">Цвет: Light</div>
+                                <div class = "Item__article-number">1089676</div>
                             </div>
-                            <div class ="likedItem__price  d-flex ">
+                            <div class ="Item__price  d-flex ">
                                 <div class = "price__number">100000</div>
                                 <div class = "currency">₽</div>
                             </div>
@@ -102,6 +101,42 @@
                 </div>
             </div>
             <!-- /Liked canvas -->
+            <!-- bucket canvas -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvas-Bucket">
+                <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas-body ">
+                   <div class = "container offcanvas-end__Title">Избранное</div>
+                   <div class = "Items__list">
+                        <div class = "Item d-flex justify-content-between align-items-center">
+                            <div class = "image-wrapper container">
+                                <a href = "#"><img src ="images/katalog/katalog_image.jpg" alt = ""></a>
+                            </div>
+                            <div class = "Item__attributes container d-flex flex-column align-items-top  ps-3" >
+                                <div class = "Item__name">Жилет с болеро</div>
+                                <div class = "Item__size">Размер: M</div>
+                                <div class = "Item__color">Цвет: Light</div>
+                                <div class = "Item__article-number">1089676</div>
+                            </div>
+                            
+                            <div class = "btnDecrease__counter container d-flex justify-content-end">
+                                <a><img src = "images/arrows_circle_minus.svg" alt="" > </a>
+                            </div>
+                            <div class = "bucket__ItemCounter ">10
+                            </div>
+                            <div class = "btnIncrease__counter container">
+                                <a><img src = "images/arrows_circle_plus.svg" alt = " "></a>
+                            </div>
+                            <div class ="price  d-flex ">
+                                <div class = "price__number">100000</div>
+                                <div class = "currency">₽</div>
+                            </div>
+                            <a class = "btn remove"><img src = "images/arrows_circle_remove.svg"></a>
+                            
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <!-- /bucket canvas -->
         </nav>
     </header>
     <main>
