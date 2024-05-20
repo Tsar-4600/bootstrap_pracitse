@@ -1,6 +1,5 @@
 
 @import url(fonts/font.css);
-
 @import url(../javascript/script.js);
 
 *{
@@ -14,12 +13,6 @@
 }
 
 @media screen and (max-width: 991px) {
-    header{
-        position: static !important;
-        background-color: #afafaf !important;
-       
-       
-    }
     header .container-fluid{
         width: auto !important;
     }
@@ -46,7 +39,9 @@
 }
 
 @media screen and (max-width: 720px) {
-   
+    .Section-for-customers__Navigation-for-content{
+        flex-direction: column;
+    }
     .Section-for-customers__Title{
         font-size: 30pt !important;
        
@@ -289,13 +284,16 @@ main{
     font-size: 42pt;
     margin-bottom: 30px;
 }
+.Section-for-customers__Navigation-for-content{
+    display: flex;
+    flex-basis: 25%;
 
+}
 .Navigation-for-content__navButton{
     background-color: #ffffff;
     width: 100%;
     border: none;
     border-bottom: 1px solid #000; /* Set bottom border width and color */
-    border-radius: 2px;
     opacity: 0.5;
     padding: 10px 20px;
     text-align: center;
@@ -308,7 +306,10 @@ main{
     opacity: 1;
     border-bottom: 3px bottom;
 }
-
+.Navigation-for-content__navButton:focus{
+    opacity: 1;
+    border-bottom: 3px bottom;
+}
 .content__Main{
     margin-bottom: 20px;
 }
