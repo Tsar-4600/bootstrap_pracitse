@@ -72,6 +72,11 @@
 }
 @media screen and (max-width: 540px)
 {
+    .body{
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
     .navbar{
         margin: auto !important;
     }
@@ -82,12 +87,13 @@
         justify-content: start !important;
 
     }
-  
+    
 }
 header{
     position: relative;
     background-color: rgb(23,23,23, 0.3);
     z-index: 400;
+    font-family: 'FuturaPT';
 }
 main{
     position: relative;
@@ -217,7 +223,7 @@ body{
     text-decoration: none !important;
 }
 .offcanvas-body__socials{
-    margin-top: 60vh;
+    margin-top: 50vh;
 }
 .btnNavLine{
     background-color: #ffffff;
@@ -230,10 +236,11 @@ body{
     font-family: 'RoundedElegance';
    
 }
-.offcanvas-start .offcanvas-body{
+.offcanvas-start{
     padding: 40px;
     font-size: 16px;
 }
+
 
 .offcanvas-start a{
     font-size: 16px;
@@ -253,6 +260,7 @@ body{
 
     max-width: 750px;
 }
+
 .offcanvas-top .btn-close{
     margin-left: 2%;
     
@@ -278,6 +286,7 @@ body{
 /* offcanvas Liked  */
 .offcanvas-end{
     width: 560px;
+    padding: 40px;
 }
 .offcanvas-end div{
     font-family: 'Montserrat';
@@ -329,9 +338,6 @@ body{
     padding-top: 20px;
     border-top: 1px solid #afafaf;
     border-bottom: 1px solid #afafaf;
-}
-.offcanvas-end .offcanvas-body{
-    padding: 40px;
 }
 /* section1 */
 .section1{

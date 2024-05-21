@@ -1,8 +1,46 @@
 
-@import url("style-for-customers.css");
+
+@media screen and (min-width: 1200px)
+{ 
+  .filter-menu-and-item-list{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row !important;
+    
+  }
+}
+  .filter-menu__mobile-wrapper{
+    display: none;
+  }
+  
 @media screen and (max-width: 1200px){
+  .filter-menu-and-item-list{
+    flex-direction: column !important;
+  }
+  .filter-menu__wrapper{
+    display: none !important;
+  }
+  
+  .filter-menu__mobile-wrapper{
+    display:block;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+  .mobile-switches{
+    margin-left: auto !important;
+    margin-left: auto !important;
+  }
+  .filter-menu__mobile-wrapper a{
+    margin-right: 15px;
+    text-decoration: none;
+    color:#000000;
+    font-size: 16px;
+  }
   .item-list__item {
     flex-basis: 33% !important;
+  }
+  .dropdown{
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 900px)
@@ -10,14 +48,23 @@
   main{
     padding-left: 0px !important;
   }
+  .filter-menu__mobile-wrapper a{
+    font-size: 15px;
+  }
 
 }
 @media screen and (max-width: 700px){
   .item-list__item {
     flex-basis: 100% !important;
   }
-  
+  .filter-menu__mobile-wrapper a{
+    font-size: 14px;
+  }
 
+}
+
+.filter-menu__mobile-wrapper{
+  font-family: 'Montserrat';
 }
 .Katalog-title{
   font-size: 52px;
@@ -32,6 +79,17 @@
   flex-basis: 25%;
   flex-grow: 1;
 }
+.filter-menu-mobile__BtnFiltersShow{
+   cursor: pointer;
+   margin: 0;
+}
+.filter-menu-mobile__filters{
+   display: none;
+}
+.showFilters-mobile{
+  display: block;
+}
+
 
 .item__clickableArea{
   width: 100%;
@@ -84,7 +142,7 @@ main{
 }
 .filter-menu__wrapper{
   font-family: 'Montserrat';
-  max-width: 200px;
+  max-width: 250px;
 }
 .filter-menu__price-ranger{
   max-width: 95%;

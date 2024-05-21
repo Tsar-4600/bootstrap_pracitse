@@ -1,6 +1,5 @@
 
 @import url(fonts/font.css);
-@import url(../javascript/script.js);
 
 *{
     padding: 0;
@@ -61,7 +60,7 @@
 }
 
     
-@media screen and (max-width: 540px)
+@media screen and (max-width: 620px)
 {
     .navbar{
         margin: auto !important;
@@ -184,7 +183,7 @@ main{
     text-decoration: none !important;
 }
 .offcanvas-body__socials{
-    margin-top: 70vh;
+    margin-top: 60vh;
 }
 .btnNavLine{
     background-color: #ffffff;
@@ -192,6 +191,20 @@ main{
 
     height: 3px;
     
+}
+.offcanvas-start{
+    font-family: 'RoundedElegance';
+   
+}
+.offcanvas-start{
+    padding: 40px;
+    font-size: 16px;
+}
+
+
+.offcanvas-start a{
+    font-size: 16px;
+   
 }
 /* top canvas*/
 .offcanvas-top{
@@ -207,6 +220,7 @@ main{
 
     max-width: 750px;
 }
+
 .offcanvas-top .btn-close{
     margin-left: 2%;
     
@@ -232,6 +246,7 @@ main{
 /* offcanvas Liked  */
 .offcanvas-end{
     width: 560px;
+    padding: 40px;
 }
 .offcanvas-end div{
     font-family: 'Montserrat';
@@ -242,7 +257,6 @@ main{
     font-weight: bold;
     padding-bottom: 20px !important;
     margin-bottom: 20px;
-    border-bottom: 1px solid #afafaf;
 }
 .Items__list{
     padding-top: 10px;
@@ -275,11 +289,16 @@ main{
     padding-right: 5px;
 }
 .btnIncrease__counter img, .btnDecrease__counter img{
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
-
-
+.Items__list
+{   
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #afafaf;
+    border-bottom: 1px solid #afafaf;
+}
 .Section-for-customers__Title{
     font-size: 42pt;
     margin-bottom: 30px;
